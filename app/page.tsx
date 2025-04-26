@@ -19,21 +19,11 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-// Secciones para navegación
-const sections = [
-  "hero",
-  "portfolio",
-  "certificación",
-  "porque-elegirme",
-  "testimonios",
-  "contacto"
-];
-
 export default function Home() {
   return (
     <main className={`${montserrat.variable} ${spaceGrotesk.variable}`}>
       <Header />
-      <ScrollNavigation sections={sections} />
+      <ScrollNavigation />
       <PortfolioSection />
       <CertificationSection />
       <WhyChooseMeSection />
